@@ -1,5 +1,5 @@
 document.addEventListener('mousedown', (e) => {
-  if (e.which === 2) {
+  if (e.shiftKey && e.which === 2) {
     e.preventDefault()
 
     const el = document.elementFromPoint(e.clientX, e.clientY)
